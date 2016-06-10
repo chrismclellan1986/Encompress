@@ -17,6 +17,6 @@ public class WorkspaceLandingPageModalContainer {
         this.driver = driver;
     }
 
-    @FindBy(how = How.XPATH, using = "/html/body/div[1]/enc-loading-indicator/section/ui-view/enc-workspace/div[3]/section/enc-landing-page-header/header/span/span")
+    @FindBy(how = How.CSS, using = "img.title")
     public WebElement span_LoginName;
 }
