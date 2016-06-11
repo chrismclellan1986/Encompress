@@ -25,4 +25,11 @@ public class LoginPage {
     @FindBy(how = How.CLASS_NAME, using = "enc-login-submit-button")
     public WebElement btn_Login;
 
+
+    public void EnterLoginDetails(String username, String password){
+        txtbx_Username.sendKeys(username);
+        txtbx_Password.sendKeys(password);
+        btn_Login.click();
+    }
+
 }

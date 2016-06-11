@@ -33,11 +33,13 @@ public class EncompassLoginTest {
 
         // Once the class is instantiated, we use their objects to driver user actions
 
-        loginPage.txtbx_Username.sendKeys("kylo.ren@ytrewq.moc");
-        loginPage.txtbx_Password.sendKeys("encompass1");
-        loginPage.btn_Login.click();
+        loginPage.EnterLoginDetails("kylo.ren@ytrewq.moc", "encompass1");
 
         WorkspaceLandingPageModalContainer workLandingPageModalContainer = PageFactory.initElements(driver, WorkspaceLandingPageModalContainer.class);
+
+        workLandingPageModalContainer.SearchForOpenWorkspace("test");
+
+        workLandingPageModalContainer.SelectOpen();
 
 
 
