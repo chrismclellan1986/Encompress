@@ -20,6 +20,9 @@ public class CompanyOrdersPage
     @FindBy(how = How.CLASS_NAME, using = "cost")
     public WebElement orderReportsCostListContainer;
 
+    @FindBy(how = How.CSS, using = "[ng-click=\'purchaseFlowStepCtrl.next()\']")
+    public WebElement placeOrderControl;
+
     public CompanyOrdersPage(WebDriver driver)
     {
         this.driver = driver;
@@ -34,4 +37,8 @@ public class CompanyOrdersPage
         return cost;
     }
 
+    public void SelectPlaceOrder()
+    {
+        placeOrderControl.click();
+    }
 }

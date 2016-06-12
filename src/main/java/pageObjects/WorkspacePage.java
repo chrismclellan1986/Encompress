@@ -30,7 +30,7 @@ public class WorkspacePage
 
         WebElement searchElement = searchButton;
 
-        WebDriverWait wait = new WebDriverWait(driver, 100);
+        WebDriverWait wait = new WebDriverWait(driver, 1000);
 
         WebElement element = wait.until(ExpectedConditions.elementToBeClickable(searchElement));
         if(element.isDisplayed())
