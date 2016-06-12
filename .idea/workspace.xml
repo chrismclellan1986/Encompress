@@ -2,16 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0b2065a8-96a9-4a58-8724-1262496d0c77" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/WorkspacePage.java" />
-      <change type="DELETED" beforePath="C:\Projects\Encompress\src\main\java\HelperPackage\Help.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/EncompassLoginTest.class" afterPath="$PROJECT_DIR$/target/test-classes/EncompassLoginTest.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/pageObjects/LoginPage.class" afterPath="$PROJECT_DIR$/target/classes/pageObjects/LoginPage.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/pageObjects/WorkspaceLandingPageModalContainer.class" afterPath="$PROJECT_DIR$/target/classes/pageObjects/WorkspaceLandingPageModalContainer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/EncompassLoginTest.java" afterPath="$PROJECT_DIR$/src/test/java/EncompassLoginTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Encompress.iml" afterPath="$PROJECT_DIR$/.idea/Encompress.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pageObjects/LoginPage.java" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/LoginPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pageObjects/WorkspaceLandingPageModalContainer.java" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/WorkspaceLandingPageModalContainer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Encompress.iws" />
@@ -489,7 +482,13 @@
       <option name="project" value="LOCAL" />
       <updated>1465684429458</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Small Update to Classes">
+      <created>1465732873574</created>
+      <option name="number" value="00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1465732873574</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TodoView">
