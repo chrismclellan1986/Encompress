@@ -1,5 +1,6 @@
 package pageObjects;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -7,32 +8,30 @@ import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.pagefactory.AjaxElementLocatorFactory;
 
+import java.util.List;
+
 /**
  * Created by cmcle_000 on 12/06/2016.
  */
-public class CompanyAppointmentPage
+public class CompanyOrdersPage
 {
     private final WebDriver driver;
 
-    @FindBy(how = How.ID, using = "purchaseFlowStepCtrl.form_input_companyName_1")
-    public WebElement companyNameTextBox;
+    @FindBy(how = How.CLASS_NAME, using = "cost")
+    public WebElement orderReportsCostListContainer;
 
-    @FindBy(how = How.CLASS_NAME, using = "next")
-    public WebElement searchButton;
-
-    public CompanyAppointmentPage(WebDriver driver)
+    public CompanyOrdersPage(WebDriver driver)
     {
         this.driver = driver;
         PageFactory.initElements(new AjaxElementLocatorFactory(driver, 20), this);
     }
 
-    public void EnterCompanyName(String companyName)
-    {
-        companyNameTextBox.sendKeys(companyName);
+    public String IsCompanyRecordFree(String cost) {
+        if(orderReportsCostListContainer.getText().contains(cost))
+        {
+            return orderReportsCostListContainer.getText();
+        }
+        return cost;
     }
 
-    public void SelectSearchButton()
-    {
-        searchButton.click();
-    }
 }

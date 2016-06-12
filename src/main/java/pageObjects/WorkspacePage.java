@@ -23,17 +23,20 @@ public class WorkspacePage
     public WorkspacePage(WebDriver driver)
     {
         this.driver = driver;
-        PageFactory.initElements(new AjaxElementLocatorFactory(driver, 30), this);
+        PageFactory.initElements(new AjaxElementLocatorFactory(driver, 50), this);
     }
 
     public StartMenuModalPage SelectSearch() throws InterruptedException {
 
         WebElement searchElement = searchButton;
 
-        WebDriverWait wait = new WebDriverWait(driver, 30);
+        WebDriverWait wait = new WebDriverWait(driver, 100);
 
         WebElement element = wait.until(ExpectedConditions.elementToBeClickable(searchElement));
-        element.click();
+        if(element.isDisplayed())
+        {
+            element.click();
+        }
         return new StartMenuModalPage(driver);
     }
 
