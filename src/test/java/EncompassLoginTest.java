@@ -8,9 +8,7 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import pageObjects.LoginPage;
-import pageObjects.WorkspaceLandingPageModalContainer;
-import pageObjects.WorkspacePage;
+import pageObjects.*;
 
 public class EncompassLoginTest {
 
@@ -39,6 +37,18 @@ public class EncompassLoginTest {
         WorkspacePage workSpacePage = new WorkspacePage(driver);
 
         workSpacePage.SelectSearch();
+
+        StartMenuModalPage startMenuModalPage = new StartMenuModalPage(driver);
+
+        startMenuModalPage.SearchAndClickType("Organisation");
+        startMenuModalPage.SearchAndClickSource("Companies House");
+        startMenuModalPage.SearchAndClickReport("Company Record");
+
+        CompanyAppointmentPage companyAppointmentPage = new CompanyAppointmentPage(driver);
+        companyAppointmentPage.EnterCompanyName("Harrods Limited");
+        companyAppointmentPage.SelectSearchButton();
+
+
 
 
 
