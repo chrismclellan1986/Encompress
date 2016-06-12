@@ -8,9 +8,9 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.support.PageFactory;
 import pageObjects.LoginPage;
 import pageObjects.WorkspaceLandingPageModalContainer;
+import pageObjects.WorkspacePage;
 
 public class EncompassLoginTest {
 
@@ -35,6 +35,12 @@ public class EncompassLoginTest {
 
         workSpaceContainer.enterMatterReference("Chris McLellan" + Math.random());
         workSpaceContainer.selectCreateButton();
+
+        WorkspacePage workSpacePage = new WorkspacePage(driver);
+
+        workSpacePage.SelectSearch();
+
+
 
     }
 
